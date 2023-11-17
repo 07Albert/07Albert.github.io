@@ -47,16 +47,16 @@ footer {
     height: 30px;
 }
 
-.faceimg{
+.imgas{
     margin-left: 10px;
     float: left;
     
 }
-.faceimg a{
+.imgas a{
     margin: 0 10px;
     text-decoration: none;
 }
-.faceimg img{
+.imgas img{
     width: 100px;
     height: 100px;
 }
