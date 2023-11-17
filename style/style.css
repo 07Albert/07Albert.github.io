@@ -1,7 +1,11 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 40px;
     text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 
 header {
@@ -13,6 +17,8 @@ h1 {
     color: #333;
 }
 
+
+
 section {
     margin-top: 20px;
 }
@@ -22,7 +28,7 @@ footer {
     background-color: #333;
     color: #fff;
     padding: 10px;
-    position:absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
 }
@@ -39,4 +45,58 @@ footer {
 .social-icons img {
     width: 30px;
     height: 30px;
+}
+
+.faceimg{
+    margin-left: 10px;
+    float: left;
+    
+}
+.faceimg a{
+    margin: 0 10px;
+    text-decoration: none;
+}
+.faceimg img{
+    width: 100px;
+    height: 100px;
+}
+
+#top-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #1a1a1a;
+}
+
+ #middle-panel, #bottom-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #333;
+}
+
+.side-panels {
+    display: flex;
+    flex: 1;
+}
+
+#left-panel, #right-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #333;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
 }
