@@ -1,79 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>kaho</title>
-    <link rel="stylesheet" type = "text/css" href="style/style.css">
-    <link rel="shortcut icon" href="imgs/favicon.ico?" type="image/x-icon">
+    <title>Be My Valentine</title>
+    <style>
+        body {
+            text-align: center;
+            margin-top: 30px;
+            font-family: 'Courier';
+			background-color:#FFF5E4;
+            color: #FF9494;
+        }
+        #valentineQuestion {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+        .answerButton {
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            margin: 10px;
+            font-family: 'courier';
+            margin-bottom: 20px;
+            background-color:#FFE3E1;
+            color: #e67373;
+            border-radius: 12px;
+            border: 2px solid #FFE3E1;
+        }
+    </style>
 </head>
-
 <body>
+    <div id="valentineQuestion"><b>Hi my love! :3 Will you be my Valetines?</b></div>
+    <button class="answerButton" onclick="location.href='thankyou.html'">Yes :D</button>
+    <button class="answerButton" id="noButton">NO >:(</button>
+    <br>
+    <img src ='imgs/bossmode.jpg' 
+    alt = 'my beautiful wifey' 
+    class="responsive"
+    width="800"
+    height = "1000">
 
-    <div id="top-panel">
-        <h2>kaho</h2>
-        <div class="faceimg">
-        <img src="imgs/face.png" alt="Top Image">
-        </div>
-        <p>Hello! My name is Albert Hong, also known as kaho. I am currently enrolled in Simon Fraser University and play collegiate e-sports for SFU Pink Valorant.</p>
-        <p>This website's main purpose to act as a resume for all of my e-sports achievements throughout my time playing.</p>
-    </div>
-
-    <div class="side-panels">
-
-        <div id="left-panel">
-            <h2>Valorant</h2>
-            <div class ="imgas">
-            <img src="imgs/valo.png" alt="Left Image">
-            </div>
-            <p>I have been competing in Valorant since 2020, which is the year I enrolled. Here are some of the achievements during my time playing. </p>
-            <ul>
-                <li>1st place CollegeValorant West </li>
-                <li>1st place Canada Esports Nationals</li>
-                <li>2nd place Canada Qualifier</li>
-                <li>Reached #50 in the leaderboard globally</li>
-            </ul>
-            <a href="https://tracker.gg/valorant/profile/riot/kaho%23ivy/overview" target="_blank">Game profile</a>
-        </div>
-
-        <div id="middle-panel">
-            <h2>Overwatch</h2>
-            <div class="imgas">
-            <img src="imgs/ow.png" alt="Middle Image">
-            </div>
-            <p>I professionally played Overwatch from the year 2016 - 2018. Here are some of my achievements.</p>
-            <ul>
-                <li>1st place Overwatch Contenders 2018</li>
-                <li>1st place Angry Cup</li>
-                <li>Consistently hit #1 in the world from 2016-2017</li>
-            </ul>
-        </div>
-
-        <div id="right-panel">
-            <h2>Apex</h2>
-            <div class="imgas">
-            <img src="imgs/apex.png" alt="Right Image">
-            </div>
-            <p>Apex is a game I played for fun and have reached the 2nd highest rank "Masters" in less than a month playing.</p>
-            <a href="https://apexlegendsstatus.com/profile/PC/cababy" target="_blank">Game profile</a>
-        </div>
-
-    </div>
-
-
-
+    <script>
+        document.getElementById('noButton').addEventListener('click', function() {
+            var yesButton = document.querySelector('button[onclick*="thankyou.html"]');
+            var currentFontSize = parseInt(window.getComputedStyle(yesButton).fontSize);
+            yesButton.style.fontSize = (currentFontSize + 10) + 'px'; // Increase font size by 5px
+        });
+    </script>
 </body>
-
-    <footer>
-        <p>&copy; kaho (Albert Hong). All rights reserved</p>
-        <div class="social-icons">
-            <a href="https://twitter.com/kahoTTV" target="_blank" title="X"><img src="imgs/x-icon.png" alt="X icon"></a>
-            <a href="https://www.twitch.tv/kahottv" target="_blank" title="Twitch"><img src="imgs/twitch-icon.png" alt="Twitch Icon"></a>
-            <a href="https://www.vlr.gg/player/32166/kaho" target="_blank" title="VLR"><img src="imgs/vlr-icon.png" alt="VLR Icon"></a>
-        </div>
-
-
-    </footer>
-
 </html>
